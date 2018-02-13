@@ -15,6 +15,8 @@ class HelloController extends Controller
 
     // this is clean
 
+    //customer login page
+
     $items = DB::table('people')->simplePaginate(5);
     $param = ['items' => $items,'user'=>$user];
     //$items = DB::table('people')->simplePaginate(5);
