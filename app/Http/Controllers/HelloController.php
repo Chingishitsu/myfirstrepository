@@ -12,6 +12,9 @@ class HelloController extends Controller
   public function index(Request $request)
   {
     $user = Auth::user();
+
+    //add comment
+
     $items = DB::table('people')->simplePaginate(5);
     $param = ['items' => $items,'user'=>$user];
     //$items = DB::table('people')->simplePaginate(5);
