@@ -13,7 +13,7 @@ class HelloController extends Controller
   {
     $user = Auth::user();
 
-    //add comment
+    //add comment this comment is important
 
     $items = DB::table('people')->simplePaginate(5);
     $param = ['items' => $items,'user'=>$user];
